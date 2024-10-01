@@ -1,12 +1,12 @@
-Here’s an updated README focusing specifically on the **tech stack** and **models** used in the **AI-Squat-Workout-Recommender** project, highlighting the technical components more prominently:
-
----
-
 # AI-Squat-Workout-Recommender
 
 ## Overview
 
 The **AI-Squat-Workout-Recommender** is an artificial intelligence-based system designed to evaluate squat form and provide workout recommendations. The system uses human pose estimation models to track the user's movements in videos and detects squat form deficiencies by analyzing key joint angles. Based on this analysis, it recommends corrective exercises.
+
+
+![Chat Groc Demo](https://img.youtube.com/vi/RTCbG9Q8kmI/0.jpg)  
+[Watch the Demo](https://www.youtube.com/watch?v=RTCbG9Q8kmI) 
 
 ## Tech Stack
 
@@ -134,10 +134,3 @@ If the system detects **knee valgus** (knees caving inward), it may recommend:
 The **AI-Squat-Workout-Recommender** is built using cutting-edge technologies in pose estimation and machine learning to provide personalized fitness recommendations. The system can be expanded to include more exercises and form checks, along with enhancements in real-time analysis using webcam inputs.
 
 By leveraging powerful deep learning models for pose detection and a robust recommendation engine, the system offers practical feedback to help users improve their workout technique.
-
----
-
-This README now emphasizes the tech stack and models that the project uses, making it more focused on the technical aspects of the project.
-
-![Chat Groc Demo](https://img.youtube.com/vi/RTCbG9Q8kmI/0.jpg)  
-[Watch the Demo](https://www.youtube.com/watch?v=RTCbG9Q8kmI) 
