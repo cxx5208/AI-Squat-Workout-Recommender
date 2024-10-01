@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workout Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>AI Workout Recommender</h1>
+
+    <!-- Dark Mode Toggle Button -->
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+    <!-- Progress Bar -->
+    <div class="progress" id="progress-container" style="display: none;">
+        <div class="progress-bar" id="progress-bar" style="width: 0%;"></div>
+    </div>
+
+    <!-- Video Upload Form -->
+    <form id="uploadForm" enctype="multipart/form-data" class="form-inline">
+        <label for="video">Upload your workout video:</label>
+        <input type="file" name="video" id="videoFile" class="form-control" accept="video/*" required>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!-- Video Preview -->
+    <div id="video-container" style="display: none;">
+        <h3>Preview Video</h3>
+        <video id="workout-video" controls>
+            <source id="videoSource" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Custom Video Player Controls -->
+        <div class="custom-controls">
+            <button onclick="document.getElementById('workout-video').currentTime -= 1;">Previous Frame</button>
+            <button onclick="document.getElementById('workout-video').currentTime += 1;">Next Frame</button>
+            <select id="playbackSpeed" onchange="document.getElementById('workout-video').playbackRate = this.value;">
+                <option value="1">1x</option>
+                <option value="0.5">0.5x</option>
+                <option value="1.5">1.5x</option>
+                <option value="2">2x</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Feedback Table -->
+    <div id="feedback-container" style="display: none;">
+        <h3>Form Feedback</h3>
+        <table id="feedback-table">
+            <thead>
+                <tr>
+                    <th>Timestamp (s)</th>
+                    <th>Feedback</th>
+                </tr>
+            </thead>
+            <tbody id="feedback-body">
+                <!-- Feedback rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>

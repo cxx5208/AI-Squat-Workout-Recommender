@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 20px 0;
+    color: #4A90E2;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="file"] {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4A90E2;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Video Styles */
+#video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#workout-video {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Feedback Table Styles */
+#feedback-container {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #4A90E2;
+    color: white;
+}
+
+td {
+    background-color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode h1, .dark-mode th {
+    color: #4A90E2;
+}
+
+.dark-mode button {
+    background-color: #4A90E2;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background-color: #357ABD;
+}
+
+.dark-mode table {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode td {
+    background-color: #2b2b2b;
+}
+
+.dark-mode th, .dark-mode td {
+    border-color: #444;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #workout-video {
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+Flask
+opencv-python
+torch
+transformers
+openai
+matplotlib
+tensorflow
+tensorflow-hub
+numpy
+openai
+matplotlib
+Flask-SocketIO
