@@ -5,7 +5,7 @@
 The **AI-Squat-Workout-Recommender** is an artificial intelligence-based system designed to evaluate squat form and provide workout recommendations. The system uses human pose estimation models to track the user's movements in videos and detects squat form deficiencies by analyzing key joint angles. Based on this analysis, it recommends corrective exercises.
 
 
-![Chat Groc Demo](https://img.youtube.com/vi/RTCbG9Q8kmI/0.jpg)  
+![Demo](https://img.youtube.com/vi/RTCbG9Q8kmI/0.jpg)  
 [Watch the Demo](https://www.youtube.com/watch?v=RTCbG9Q8kmI) 
 
 ## Tech Stack
